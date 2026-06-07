@@ -21,7 +21,7 @@ html {
 }
 
 .hero {
-  height: 100vh;
+  height: 100dvh;
   background-color: #fdffff;
   width: 100%;
 }
