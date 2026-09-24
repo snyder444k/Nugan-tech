@@ -333,6 +333,7 @@ main {
   gap: 1rem;
   font-family: "dm sans";
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .tools p {
@@ -467,6 +468,7 @@ main {
   font-family: "dm sans";
   font-weight: 500;
   cursor: pointer;
+  border: none;
 }
 
 
@@ -927,9 +929,6 @@ form h2 span {
     line-height: 0.8;
   }
 
-  .footer {
-    padding: 3rem 2.5rem 3rem 2.5rem;
-  }
 
   html {
     font-size: 13px;
@@ -984,7 +983,7 @@ header ul {
 }
 
 .fut__nav ul {
-  gap: 3rem;
+  gap: 2rem;
 }
 
 }
@@ -1043,11 +1042,22 @@ header ul {
 
 
   .contact {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     border-radius: 0;
+    flex-direction: column;
+    gap: 5rem;
+    padding-top: 3rem;
   }
 
+
+  .form_mom {
+    order: 2;
+  }
+
+  .form_descrip{
+    order: 1;
+  }
   .clash {
     margin-top: 0.4rem;
   }
@@ -1055,9 +1065,11 @@ header ul {
   .head p {
     line-height: 0.8;
   }
-
-  .footer {
-    padding: 3rem 2.5rem 3rem 2.5rem;
+.footer {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
   }
 
   html {
@@ -1066,6 +1078,9 @@ header ul {
 
   .write h1 {
     font-size: 4.5rem;
+    display: block;
+    letter-spacing: 0;
+    font-weight: 800;
   }
 
   .write {
@@ -1075,19 +1090,21 @@ header ul {
 
   .third,
   .area {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
   }
 
   .area {
-    width: 50vw;
+    width: 71vw;
   }
 
   .works {
-    padding: 5rem 0;
+    padding: 5rem 2rem;
   }
 
   .explore {
     width: 95%;
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
 
   .fund {
@@ -1098,9 +1115,6 @@ header ul {
     gap: 0.6rem;
   }
 
-  .form_descrip {
-    gap: 1rem;
-  }
 
   .form {
   gap: 1.3rem;
@@ -1113,21 +1127,22 @@ header ul {
 }
 
 .me {
-  height: 464px;
-  width: 400px;
+  height: 440px;
+  width: 370px;
   -webkit-mask-image: none;
   mask-image: none;
+  margin: 0;
 }
-
 
 
 
 .fut__nav ul {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   align-items: flex-start;
    gap: 1rem;
 }
+
 
 .fut__nav li {
   list-style: disc; 
@@ -1146,13 +1161,15 @@ header {
 .fut__nav {
   display: flex;
   flex-direction: column;
-  align-items: center;
- gap: .6rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 0;
 }
 
+
+
 .fut__nav p {
-    display: block;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-family: "dm sans";
     font-weight: bold;
 }
@@ -1163,10 +1180,14 @@ header {
 
 
 
-
 .socials{
     flex-direction: column;
-    gap: 4rem;
+    gap: 1.5rem;
+}
+
+.socials p{
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 .socials i {
@@ -1292,6 +1313,18 @@ section {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     border-radius: 0;
+    flex-direction: column;
+    gap: 5rem;
+    padding-top: 3rem;
+  }
+
+
+  .form_mom {
+    order: 2;
+  }
+
+  .form_descrip{
+    order: 1;
   }
 
   .clash {
@@ -1302,16 +1335,22 @@ section {
     line-height: 0.8;
   }
 
-  .footer {
-    padding: 3rem 2.5rem 3rem 2.5rem;
+.footer {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
   }
 
   html {
-    font-size: 12.5px;
+    font-size: 13px;
   }
 
   .write h1 {
     font-size: 4.5rem;
+    display: block;
+    letter-spacing: 0;
+    font-weight: 800;
   }
 
   .write {
@@ -1321,19 +1360,21 @@ section {
 
   .third,
   .area {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
   }
 
   .area {
-    width: 50vw;
+    width: 71vw;
   }
 
   .works {
-    padding: 5rem 0;
+    padding: 5rem 2rem;
   }
 
   .explore {
     width: 95%;
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
 
   .fund {
@@ -1344,9 +1385,6 @@ section {
     gap: 0.6rem;
   }
 
-  .form_descrip {
-    gap: 1rem;
-  }
 
   .form {
   gap: 1.3rem;
@@ -1360,20 +1398,21 @@ header ul {
 
 .me {
   height: 440px;
-  width: 400px;
+  width: 370px;
   -webkit-mask-image: none;
   mask-image: none;
+  margin: 0;
 }
-
 
 
 
 .fut__nav ul {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   align-items: flex-start;
    gap: 1rem;
 }
+
 
 .fut__nav li {
   list-style: disc; 
@@ -1392,8 +1431,16 @@ header {
 .fut__nav {
   display: flex;
   flex-direction: column;
-  align-items: center;
- gap: .6rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 0;
+}
+
+.fut__nav p {
+    display: block;
+    font-size: 1.6rem;
+    font-family: "dm sans";
+    font-weight: bold;
 }
 
 .fut__nav p {
@@ -1409,12 +1456,15 @@ header {
 
 
 
-
 .socials{
     flex-direction: column;
-    gap: 4rem;
+    gap: 1.5rem;
 }
 
+.socials p{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
 .socials i {
     font-size: 1.8rem;
 
@@ -1591,9 +1641,11 @@ section {
   .head p {
     line-height: 0.8;
   }
-
-  .footer {
-    padding: 3rem 2.5rem 3rem 2.5rem;
+.footer {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
   }
 
   html {
@@ -1614,7 +1666,7 @@ section {
 
   .third,
   .area {
-    font-size: 1.15rem;
+    font-size: 0.95rem;
   }
 
   .area {
@@ -1652,7 +1704,7 @@ header ul {
 
 .me {
   height: 440px;
-  width: 400px;
+  width: 370px;
   -webkit-mask-image: none;
   mask-image: none;
   margin: 0;
@@ -1660,13 +1712,13 @@ header ul {
 
 
 
-
 .fut__nav ul {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   align-items: flex-start;
    gap: 1rem;
 }
+
 
 .fut__nav li {
   list-style: disc; 
@@ -1685,8 +1737,16 @@ header {
 .fut__nav {
   display: flex;
   flex-direction: column;
-  align-items: center;
- gap: .6rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 0;
+}
+
+.fut__nav p {
+    display: block;
+    font-size: 1.6rem;
+    font-family: "dm sans";
+    font-weight: bold;
 }
 
 .fut__nav p {
@@ -1702,13 +1762,15 @@ header {
 
 
 
-
 .socials{
     flex-direction: column;
-    gap: 4rem;
+    gap: 1.5rem;
 }
 
-.socials i {
+.socials p{
+  font-size: 1.6rem;
+  font-weight: bold;
+}.socials i {
     font-size: 1.8rem;
 
 }
@@ -1906,8 +1968,11 @@ section {
     line-height: 0.8;
   }
 
-  .footer {
-    padding: 3rem 2.5rem 3rem 2.5rem;
+ .footer {
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
   }
 
   html {
@@ -1928,7 +1993,7 @@ section {
 
   .third,
   .area {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .area {
@@ -1966,7 +2031,7 @@ header ul {
 
 .me {
   height: 440px;
-  width: 400px;
+  width: 370px;
   -webkit-mask-image: none;
   mask-image: none;
   margin: 0;
@@ -1974,13 +2039,13 @@ header ul {
 
 
 
-
 .fut__nav ul {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   align-items: flex-start;
    gap: 1rem;
 }
+
 
 .fut__nav li {
   list-style: disc; 
@@ -1999,8 +2064,16 @@ header {
 .fut__nav {
   display: flex;
   flex-direction: column;
-  align-items: center;
- gap: .6rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 0;
+}
+
+.fut__nav p {
+    display: block;
+    font-size: 1.6rem;
+    font-family: "dm sans";
+    font-weight: bold;
 }
 
 .fut__nav p {
@@ -2016,10 +2089,14 @@ header {
 
 
 
-
 .socials{
     flex-direction: column;
-    gap: 4rem;
+    gap: 1.5rem;
+}
+
+.socials p{
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 .socials i {
@@ -2222,7 +2299,10 @@ section {
   }
 
   .footer {
-    padding: 3rem 2.5rem 3rem 2.5rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
   }
 
   html {
@@ -2289,13 +2369,13 @@ header ul {
 
 
 
-
 .fut__nav ul {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   align-items: flex-start;
    gap: 1rem;
 }
+
 
 .fut__nav li {
   list-style: disc; 
@@ -2314,8 +2394,16 @@ header {
 .fut__nav {
   display: flex;
   flex-direction: column;
-  align-items: center;
- gap: .6rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 0;
+}
+
+.fut__nav p {
+    display: block;
+    font-size: 1.6rem;
+    font-family: "dm sans";
+    font-weight: bold;
 }
 
 .fut__nav p {
@@ -2331,10 +2419,14 @@ header {
 
 
 
-
 .socials{
     flex-direction: column;
-    gap: 4rem;
+    gap: 1.5rem;
+}
+
+.socials p{
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 .socials i {
@@ -2536,8 +2628,13 @@ section {
     line-height: 0.8;
   }
 
+  
+
   .footer {
-    padding: 1.5rem 2rem 3rem 1.5rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
   }
 
   html {
@@ -2603,12 +2700,10 @@ header ul {
 }
 
 
-
-
 .fut__nav ul {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   align-items: flex-start;
    gap: 1rem;
 }
 
@@ -2630,13 +2725,14 @@ header {
 .fut__nav {
   display: flex;
   flex-direction: column;
-  align-items: center;
- gap: .6rem;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-top: 0;
 }
 
 .fut__nav p {
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-family: "dm sans";
     font-weight: bold;
 }
@@ -2650,7 +2746,12 @@ header {
 
 .socials{
     flex-direction: column;
-    gap: 4rem;
+    gap: 1.5rem;
+}
+
+.socials p{
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 .socials i {

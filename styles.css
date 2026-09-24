@@ -11,6 +11,20 @@ html {
     scroll-behavior: smooth;
 }
 
+.phone, .email {
+    cursor: pointer;
+}
+
+.email a {
+    text-decoration: none;
+    color: black;
+}
+
+#phone {
+    text-decoration: none;
+    color: black;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -65,9 +79,10 @@ header p span {
 .footer {
     width: 100%;
     display: flex;
-    padding: 3rem 3rem 3rem 5rem;
+    padding: 3rem 4.3rem 3rem 4rem;
+    gap: 5rem;
     justify-content: space-between;
-   align-items: center;
+   align-items: flex-start;
 }
 
 .nu__gan {
@@ -81,17 +96,44 @@ header p span {
    color: #000000;
 } 
 
+.about_him {
+  font-weight: 550;
+  font-size: 1.2rem;
+  width: 300px;
+}
+
+.introl {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    font-family: "dm sans";
+}
+
 
 .fut__nav ul {
    display: flex;
-   gap: 3.75rem;
+   flex-direction: column;
+   gap: 2rem;
 }
 
-.fut__nav p, .fut__nav hr {
+.fut__nav hr {
     display: none;
 }
 
-.fut__nav li {
+
+.fut__nav p {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    font-family: "dm sans";
+    font-weight: bold;
+}
+
+.fut__nav p span {
+  color: #b10f2e;
+}
+
+
+.fut__nav ul li {
    list-style: none;
 }
 
@@ -110,7 +152,12 @@ header p span {
 
 .socials {
     display: flex;
-    gap: 1.3rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.wink {
+    color: #b10f2e;
 }
 
 .socials i {
@@ -120,8 +167,20 @@ header p span {
     color: #000000;
 }
 
+.socials p{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+
+
 .socials a {
-    text-decoration: none;
+      text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-family: "dm sans";
+    font-size: 1.2rem;
+    transition: 1s linear;
 }
 
 .socials i:hover {
